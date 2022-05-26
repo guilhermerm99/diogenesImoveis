@@ -55,7 +55,7 @@
 
 .site {
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 8%;
@@ -72,7 +72,7 @@
 .locacao,
 .atendimento {
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 6%;
