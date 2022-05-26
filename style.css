@@ -17,6 +17,8 @@
 }
 
 .box {
+    margin-left: auto;
+    margin-right: auto;
     -webkit-box-shadow: 12px 5px 14px -3px rgba(0, 0, 0, 0.23);
     box-shadow: 12px 5px 14px -3px rgba(0, 0, 0, 0.23);
     border-radius: 35px;
@@ -142,6 +144,7 @@ margin-left: auto;
 margin-right: auto;
 text-decoration: none;
 color: white;
+font-family: 'Roboto', sans-serif;
 }
 
 .linkInsta::after{
@@ -161,12 +164,20 @@ color: white;
         height: 100%;
         box-shadow: none;
     }
+    .containerLogo{
+        margin-top: 15%;
+    }
 
     .site,
     .compraEVenda,
     .locacao,
     .atendimento {
+        font-size: 18px;
         width: 320px;
         height: 40px;
+    }
+
+    .containerInsta{
+        margin-top: 25%;
     }
 }
