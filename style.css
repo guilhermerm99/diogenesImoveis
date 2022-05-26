@@ -5,22 +5,27 @@
 }
 
 body {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .containerBody {
+    margin-left: auto;
+    margin-right: auto;
     width: 100vw;
     height: 100vh;
     background: rgba(5, 0, 82, 1);
     background: linear-gradient(180deg, rgba(5, 0, 82, 0.2) 0%, rgba(9, 28, 121, 0.2) 35%, rgba(0, 85, 103, 0.2) 100%);
-    display: grid;
+    position: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .box {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     -webkit-box-shadow: 12px 5px 14px -3px rgba(0, 0, 0, 0.23);
@@ -33,7 +38,7 @@ body {
 }
 
 .containerLogo {
-    margin-top: 5%;
+    margin-top: 15%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -43,13 +48,15 @@ body {
 }
 
 .logoDio {
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     width: 200px;
 }
 
 .containerLinks {
-    width: 500px;
+
+    width: 100%;
     height: 400px;
     display: block;
     flex-direction: row;
@@ -63,8 +70,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 8%;
-    width: 410px;
-    height: 55px;
+    width: 400px;
+    height: 50px;
     border: #ffffff solid 2px;
     display: flex;
     flex-direction: row;
@@ -80,8 +87,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 6%;
-    width: 410px;
-    height: 55px;
+    width: 400px;
+    height: 50px;
     border: #ffffff solid 2px;
     display: grid;
     flex-direction: row;
@@ -93,7 +100,6 @@ body {
 .compraEVenda,
 .locacao,
 .atendimento {
-
     color: #ffffff;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
@@ -103,15 +109,18 @@ body {
     -webkit-box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
     box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
     transform: translateY(-2px);
+    transform: scale(1.05);
     background: #ffffff;
     border: none;
     color: #07004f;
 }
 
+
 .compraEVenda:hover {
     -webkit-box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
     box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
     transform: translateY(-2px);
+    transform: scale(1.05);
     background: #ffffff;
     border: none;
     color: #07004f;
@@ -122,6 +131,7 @@ body {
     box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
     border: none;
     transform: translateY(-2px);
+    transform: scale(1.05);
     background: #ffffff;
     color: #07004f;
 }
@@ -132,46 +142,55 @@ body {
     box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
     border: none;
     transform: translateY(-2px);
+    transform: scale(1.05);
     background: #ffffff;
     color: #07004f;
 }
 
-.containerInsta{
+.containerInsta {
     margin-top: 7%;
-
     width: 500px;
     display: flex;
 }
 
-.linkInsta{
-margin-left: auto;
-margin-right: auto;
-text-decoration: none;
-color: white;
-font-family: 'Roboto', sans-serif;
+.linkInsta {
+
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
-.linkInsta::after{
+.linkInsta::after {
     color: white;
 }
 
 /* Mobile */
 
 @media (max-width: 640px) {
-    .containerBody{
+
+    .containerBody {
+
         background-color: white;
-        width: 100vw;
-        height: 100vh;
+
     }
+
     .box {
+        display: grid;
+        margin-top: 0%;
         border-radius: 0px;
         width: 100%;
         height: 100%;
         box-shadow: none;
     }
-    .containerLogo{
-        margin-top: 15%;
+
+    .containerLogo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
     }
+
 
     .site,
     .compraEVenda,
@@ -182,7 +201,13 @@ font-family: 'Roboto', sans-serif;
         height: 40px;
     }
 
-    .containerInsta{
-        margin-top: 25%;
+    .containerLinks{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .containerInsta {
+        width: 100%;
+        margin-top: 15%;
     }
 }
