@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    
+}
+
 
 .containerBody {
     width: 100vw;
@@ -155,6 +159,7 @@ font-family: 'Roboto', sans-serif;
 
 @media (max-width: 640px) {
     .containerBody{
+        background-color: white;
         width: 100vw;
         height: 100vh;
     }
