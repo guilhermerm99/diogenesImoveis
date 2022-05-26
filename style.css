@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.containerBody {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(5, 0, 82, 1);
+    background: linear-gradient(180deg, rgba(5, 0, 82, 0.2) 0%, rgba(9, 28, 121, 0.2) 35%, rgba(0, 85, 103, 0.2) 100%);
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    -webkit-box-shadow: 12px 5px 14px -3px rgba(0, 0, 0, 0.23);
+    box-shadow: 12px 5px 14px -3px rgba(0, 0, 0, 0.23);
+    border-radius: 35px;
+    width: 500px;
+    height: 600px;
+    background: rgba(5, 0, 82, 1);
+    background: linear-gradient(180deg, rgba(5, 0, 82, 0.6) 0%, rgba(9, 28, 121, 0.6) 35%, rgba(0, 85, 103, 0.6) 100%);
+}
+
+.containerLogo {
+    margin-top: 5%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    display: flex;
+
+}
+
+.logoDio {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.containerLinks {
+    width: 500px;
+    height: 400px;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.site {
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    width: 410px;
+    height: 55px;
+    border: #ffffff solid 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.compraEVenda,
+.locacao,
+.atendimento {
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    width: 410px;
+    height: 55px;
+    border: #ffffff solid 2px;
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.site,
+.compraEVenda,
+.locacao,
+.atendimento {
+
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.site:hover {
+    -webkit-box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
+    transform: translateY(-2px);
+    background: #ffffff;
+    border: none;
+    color: #07004f;
+}
+
+.compraEVenda:hover {
+    -webkit-box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
+    transform: translateY(-2px);
+    background: #ffffff;
+    border: none;
+    color: #07004f;
+}
+
+.locacao:hover {
+    -webkit-box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
+    border: none;
+    transform: translateY(-2px);
+    background: #ffffff;
+    color: #07004f;
+}
+
+
+.atendimento:hover {
+    -webkit-box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.36);
+    border: none;
+    transform: translateY(-2px);
+    background: #ffffff;
+    color: #07004f;
+}
+
+.containerInsta{
+    margin-top: 7%;
+
+    width: 500px;
+    display: flex;
+}
+
+.linkInsta{
+margin-left: auto;
+margin-right: auto;
+text-decoration: none;
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+    .containerBody{
+        width: 100vw;
+        height: 100vh;
+    }
+    .box {
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+    }
+
+    .site,
+    .compraEVenda,
+    .locacao,
+    .atendimento {
+        width: 320px;
+        height: 40px;
+    }
+}
