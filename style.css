@@ -141,6 +141,11 @@
 margin-left: auto;
 margin-right: auto;
 text-decoration: none;
+color: white;
+}
+
+.linkInsta::after{
+    color: white;
 }
 
 /* Mobile */
